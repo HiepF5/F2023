@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .img-container {
+        display: inline-block;
+        width: 30%;
+        margin: 10px;
+      }
+    
+      .img-container{
+        transition: transform 0.3s ease;
+      }
+    
+      .img-container:hover{
+        transform: scale(1.1);
+      }
+      /* Thiết lập cho màn hình điện thoại */
+      @media screen and (max-width: 390px) {
+        img {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Thêm 3 hình ảnh -->
+        <img src="img/1.jpg" alt="Image 1" class="img-container">
+        <img src="img/1.jpg" alt="Image 2" class="img-container" >
+        <img src="img/1.jpg" alt="Image 3" class="img-container" >
+  </body>
+</html>
